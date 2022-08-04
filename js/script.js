@@ -24,3 +24,9 @@
 // login - рядок "mango935".
 // isOnline - буль true.
 // isAdmin - буль false.
+
+// const topSpeed = 160;
+// let distance = 617.54;
+// let login = "mango935";
+// const isOnline = true;
+// const isAdmin = false;
