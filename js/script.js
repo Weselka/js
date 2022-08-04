@@ -13,6 +13,14 @@
 // №2
 // Ім'я товару змінили на "Repair droid" і збільшили його ціну на 1500 кредитів. Перевизнач значення змінних pricePerItem і productName після їх оголошення.
 
-let productName = "Droid";
-console.log(productName);
-// let pricePerItem = 2000;
+// productName = "Repair droid";
+// pricePerItem += 1500;
+
+// №3
+// Оголоси наступні змінні, використовуючи ключове слово const або let, і присвой їм відповідні значення.
+
+// topSpeed - число 160.
+// distance - число 617.54.
+// login - рядок "mango935".
+// isOnline - буль true.
+// isAdmin - буль false.
