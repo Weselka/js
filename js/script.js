@@ -35,3 +35,8 @@
 //   console.log("Hello, this is my first function!");
 // }
 // sayHi();
+
+// №8
+// function add(a, b, c) {
+//   console.log(`Addition result equals ${a + b + c}`);
+// }
