@@ -18,8 +18,9 @@
 // const isAdmin = false;
 
 // №4
-// const pricePerItem = 3500;
-// const orderedQuantity = 4;
 // const totalPrice = pricePerItem * orderedQuantity;
 
 // №5
+// const message = `You picked ${productName}, price per item is ${pricePerItem} credits`;
+
+// №6
