@@ -40,3 +40,8 @@
 // function add(a, b, c) {
 //   console.log(`Addition result equals ${a + b + c}`);
 // }
+
+// №9
+//   return a + b + c;
+
+// №10
