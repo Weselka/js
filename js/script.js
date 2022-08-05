@@ -45,3 +45,17 @@
 //   return a + b + c;
 
 // №10
+// Доповни код функції таким чином, щоб у змінну message записувався рядок "You picked <product name>, price per item is <product price> credits", де <product name> і <product price> - це значення параметрів name і price. Використовуй синтаксис шаблонних рядків.
+
+function makeMessage(name, price) {
+  //    const message = ;
+  //   // Change code above this line
+  //   return message;
+}
+
+// function replacer(match, p1, p2, p3, offset, string) {
+//   // p1 is non-digits, p2 digits, and p3 non-alphanumerics
+//   return [p1, p2, p3].join(" - ");
+// }
+// let newString = "abc12345#$*%".replace(/([^\d]*)(\d*)([^\w]*)/, replacer);
+// console.log(newString); // abc - 12345 - #$*%
