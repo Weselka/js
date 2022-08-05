@@ -48,14 +48,16 @@
 // Доповни код функції таким чином, щоб у змінну message записувався рядок "You picked <product name>, price per item is <product price> credits", де <product name> і <product price> - це значення параметрів name і price. Використовуй синтаксис шаблонних рядків.
 
 function makeMessage(name, price) {
-  //    const message = ;
+  name[Radar] = 'Radar';
+  price[1] = 6150;
+  let message = 'You picked ${name} price per item is ${price} credits';
+  console.log(message);
   //   // Change code above this line
-  //   return message;
+  return message;
 }
+makeMessage();
 
-// function replacer(match, p1, p2, p3, offset, string) {
-//   // p1 is non-digits, p2 digits, and p3 non-alphanumerics
-//   return [p1, p2, p3].join(" - ");
-// }
-// let newString = "abc12345#$*%".replace(/([^\d]*)(\d*)([^\w]*)/, replacer);
-// console.log(newString); // abc - 12345 - #$*%
+// Виклик makeMessage('Radar', 6150) повертає "You picked Radar, price per item is 6150 credits"
+// Виклик makeMessage('Scanner', 3500) повертає "You picked Scanner, price per item is 3500 credits"
+// Виклик makeMessage('Reactor', 8000) повертає "You picked Reactor, price per item is 8000 credits"
+// Виклик makeMessage('Engine', 4070) повертає "You picked Engine, price per item is 4070 credits"
