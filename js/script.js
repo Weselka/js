@@ -45,19 +45,131 @@
 //   return a + b + c;
 
 // №10
-// Доповни код функції таким чином, щоб у змінну message записувався рядок "You picked <product name>, price per item is <product price> credits", де <product name> і <product price> - це значення параметрів name і price. Використовуй синтаксис шаблонних рядків.
+// function makeMessage(name, price) {
+//   const message = `You picked ${name}, price per item is ${price} credits`;
+//   console.log(message);
+// }
 
-function makeMessage(name, price) {
-  name[Radar] = 'Radar';
-  price[1] = 6150;
-  let message = 'You picked ${name} price per item is ${price} credits';
+// №18
+// function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
+
+//   let totalPrice = pricePerDroid * orderedQuantity;
+//   let customerCreditsAfter = customerCredits - totalPrice;
+//   if (totalPrice > customerCredits) {
+//     message = 'Insufficient funds!';
+//   } else {
+//     message = `You ordered ${orderedQuantity} droids, you have ${customerCreditsAfter} credits left`;
+//   }
+//   console.log(message);
+
+// }
+
+// №19
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = 'jqueryismyjam';
+//   let message;
+
+//   if (password === null) {
+//     // Change this line
+//     message = 'Canceled by user!';
+//   } else if (password === ADMIN_PASSWORD) {
+//     // Change this line
+//     message = 'Welcome!';
+//   } else {
+//     message = 'Access denied, wrong password!';
+//   }
+//   console.log(message);
+
+//   return message;
+// }
+
+// №20
+// function checkStorage(available, ordered) {
+//   let message;
+//   // Change code below this line
+//   if (ordered === 0) {
+//     message = 'There are no products in the order!';
+//   } else if (ordered > available) {
+//     message = 'Your order is too large, there are not enough items in stock!';
+//   } else {
+//     message = 'The order is accepted, our manager will contact you';
+//   }
+//   console.log(message);
+//   // Change code above this line
+//   return message;
+// }
+
+// №21
+// function isNumberInRange(start, end, number) {
+//   const isInRange = number >= start && number <= end;
+//   console.log(isInRange);
+
+//   return isInRange;
+// }
+
+// №22
+// function checkIfCanAccessContent(subType) {
+//   const canAccessContent = subType === 'pro' || subType === 'vip';
+//   console.log(canAccessContent);
+//   return canAccessContent;
+// }
+
+// №23
+// function isNumberNotInRange(start, end, number) {
+//   const isInRange = number >= start && number <= end;
+//   const isNotInRange = !isInRange;
+//   console.log(isNotInRange);
+//   return isNotInRange;
+// }
+
+// №24
+// function getDiscount(totalSpent) {
+//   const BASE_DISCOUNT = 0;
+//   const BRONZE_DISCOUNT = 0.02;
+//   const SILVER_DISCOUNT = 0.05;
+//   const GOLD_DISCOUNT = 0.1;
+//   let discount;
+//   // Change code below this line
+//   if (totalSpent >= 50000) {
+//     discount = GOLD_DISCOUNT;
+//   } else if (totalSpent >= 20000 && totalSpent < 50000) {
+//     discount = SILVER_DISCOUNT;
+//   } else if (totalSpent >= 5000 && totalSpent < 20000) {
+//     discount = BRONZE_DISCOUNT;
+//   } else {
+//     discount = BASE_DISCOUNT;
+//   }
+//   console.log(discount);
+//   // Change code above this line
+//   return discount;
+// }
+
+// №25
+function checkStorage(available, ordered) {
+  let message;
+  // Change code below this line
+
+  // if (ordered > available) {
+  //   message = 'Not enough goods in stock!';
+  // } else {
+  //   message = 'The order is accepted, our manager will contact you';
+  // }
+  message =
+    ordered > available
+      ? 'Not enough goods in stock!'
+      : 'The order is accepted, our manager will contact you';
   console.log(message);
-  //   // Change code above this line
+  // Change code above this line
   return message;
 }
-makeMessage();
 
-// Виклик makeMessage('Radar', 6150) повертає "You picked Radar, price per item is 6150 credits"
-// Виклик makeMessage('Scanner', 3500) повертає "You picked Scanner, price per item is 3500 credits"
-// Виклик makeMessage('Reactor', 8000) повертає "You picked Reactor, price per item is 8000 credits"
-// Виклик makeMessage('Engine', 4070) повертає "You picked Engine, price per item is 4070 credits"
+checkStorage(100, 50);
+// повертає "The order is accepted, our manager will contact you"
+checkStorage(100, 130);
+// повертає "Not enough goods in stock!"
+checkStorage(200, 20);
+// повертає "The order is accepted, our manager will contact you"
+checkStorage(200, 150);
+// повертає "The order is accepted, our manager will contact you"
+checkStorage(150, 180);
+// повертає "Not enough goods in stock!"
