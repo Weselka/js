@@ -145,31 +145,42 @@
 // }
 
 // №25
-function checkStorage(available, ordered) {
-  let message;
-  // Change code below this line
+// function checkStorage(available, ordered) {
+//   let message;
 
-  // if (ordered > available) {
-  //   message = 'Not enough goods in stock!';
-  // } else {
-  //   message = 'The order is accepted, our manager will contact you';
-  // }
-  message =
-    ordered > available
-      ? 'Not enough goods in stock!'
-      : 'The order is accepted, our manager will contact you';
-  console.log(message);
-  // Change code above this line
-  return message;
+//   message =
+//     ordered > available
+//       ? 'Not enough goods in stock!'
+//       : 'The order is accepted, our manager will contact you';
+//   console.log(message);
+//   // Change code above this line
+//   return message;
+// }
+
+// №30
+// function getNameLength(name) {
+//   const message = `Name ${name} is ${name.length} characters long`; // Change this line
+//   console.log(message);
+//   return message;
+// }
+
+// №33
+// function formatMessage(message, maxLength) {
+//   let result;
+//   // Change code below this line
+//   if (message.length <= maxLength) {
+//     result = message;
+//   } else {
+//     result = message.slice(0, maxLength) + '...';
+//   }
+//   // console.log(result);
+//   /// Change code above this line
+//   return result;
+// }
+
+// №34
+function normalizeInput(input) {
+  const normalizedInput = ; // Change this line
+
+  return normalizedInput;
 }
-
-checkStorage(100, 50);
-// повертає "The order is accepted, our manager will contact you"
-checkStorage(100, 130);
-// повертає "Not enough goods in stock!"
-checkStorage(200, 20);
-// повертає "The order is accepted, our manager will contact you"
-checkStorage(200, 150);
-// повертає "The order is accepted, our manager will contact you"
-checkStorage(150, 180);
-// повертає "Not enough goods in stock!"
