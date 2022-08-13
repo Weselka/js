@@ -17,7 +17,23 @@
 // повертає["Earth", "Venus"]
 // getExtremeElements(["apple", "peach", "pear", "banana"])
 // повертає["apple", "banana"]
-// Записать массив, const arr = [“BEST”, “the”, “foo”, “is”,  “JS” ]
+const arr = ['BEST”', 'the', 'foo', 'is', 'JS'];
 // развернуть массив,
 // вырезать foo,
 // перевести его в строку разделенную пробелами
+// function changeArray(array, str) {
+//   array.splice(array.indexOf(str), 1);
+//   return array;
+// }
+// console.log(changeArray(arr, 'foo'));
+
+function changeArray(array, str) {
+  const newArray = [...array];
+  newArray.splice(newArray.indexOf(str), 1);
+  return newArray;
+}
+console.log(changeArray(arr, "foo"));
+
+// Reference;
+
+
