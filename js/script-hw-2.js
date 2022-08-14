@@ -310,3 +310,125 @@
 // повертає 503
 
 // №27
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//   const filteredNumbers = [];
+
+//   //   for (let i = 0; i < numbers.length; i += 1) {
+//   //     const number = numbers[i];
+
+//   // if (number > value) {
+//   //   filteredNumbers.push(number);
+//   // }
+
+//   for (const number of numbers) {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   }
+//   console.log(filteredNumbers);
+
+//   return filteredNumbers;
+//   // Change code above this line
+// }
+
+// filterArray([1, 2, 3, 4, 5], 3);
+// // повертає [4, 5]
+// filterArray([1, 2, 3, 4, 5], 4);
+// // повертає [5]
+// filterArray([1, 2, 3, 4, 5], 5);
+// // повертає []
+// filterArray([12, 24, 8, 41, 76], 38);
+// // повертає [41, 76]
+// filterArray([12, 24, 8, 41, 76], 20);
+// // повертає [24, 41, 76]
+
+// №28
+// const a = 3 % (3-0);
+// const b = 4 % (4-1);
+// const c = 11 % (11-3);
+// const d = 12 % (12-5);
+// const e = 8 % (8-2);
+
+// console.log(a, b, c, d, e);
+
+// №29
+// function getEvenNumbers(start, end) {
+//     const numbers = [];
+
+//     for (let i = start; i <= end; i += 1) {
+//         // console.log(i);
+//         if (i % 2 === 0) {
+//             numbers.push(i);
+//         }
+//     }
+
+//     console.log(numbers)
+// }
+
+// getEvenNumbers(2, 5)
+// // повертає [2, 4]
+// getEvenNumbers(8, 8)
+// // повертає [8]
+// getEvenNumbers(7, 7)
+// // повертає []
+
+// №30
+// const start = 6;
+// const end = 27;
+// let number;
+
+// for (let i = start; i < end; i += 1) {
+//   if (i % 5 === 0) {
+//       number = i;
+//       break;
+//       console.log(number);
+//     }
+// }
+// console.log(number);
+
+// Підсумкове значення змінної number дорівнює 10
+// В циклі for використовується break для виходу до завершення усіх ітерацій циклу
+
+// №31
+// function findNumber(start, end, divisor) {
+// Change code below this line
+//   let number;
+
+//   for (let i = start; i < end; i += 1) {
+// if (i % divisor === 0) {
+//   number = i;
+//   console.log(number);
+//   return number;
+// }
+//   }
+// Change code above this line
+// }
+
+// findNumber(2, 6, 5)
+// повертає 5
+// findNumber(8, 17, 3)
+// повертає 9
+// findNumber(6, 9, 4)
+// повертає 8
+// findNumber(16, 35, 7)
+// повертає 21
+
+// №32
+// function includes(array, value) {
+  // Change code below this line
+  
+//   for (const arr of array) {
+    // if (arr === value) {
+        // return true;
+    // } 
+//   }
+    // return false;
+  // Change code above this line
+// }
+
+// includes([1, 2, 3, 4, 5], 3);
+// повертає true
+// includes([1, 2, 3, 4, 5], 17);
+// повертає false
+
