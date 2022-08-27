@@ -1045,13 +1045,13 @@ const users = [
 // console.log(getSortedFriends(users));
 
 //48
-// Change code below this line
-const getTotalBalanceByGender = (users, gender) => 
-users.filter(user => user.gender === gender)
-.reduce((allBalance, user) => allBalance + user.balance, 0);
-// Change code above this line
-console.table(getTotalBalanceByGender(users, 'female'));
-console.log(getTotalBalanceByGender(users, 'male'));
+// // Change code below this line
+// const getTotalBalanceByGender = (users, gender) => 
+// users.filter(user => user.gender === gender)
+// .reduce((allBalance, user) => allBalance + user.balance, 0);
+// // Change code above this line
+// console.table(getTotalBalanceByGender(users, 'female'));
+// console.log(getTotalBalanceByGender(users, 'male'));
 ///////////////////////////
 // const sortedByAscendingScore = [...students].sort((a, b) => a.score - b.score).map(student => student.name);
 
