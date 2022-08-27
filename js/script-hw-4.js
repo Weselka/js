@@ -964,12 +964,96 @@ const users = [
 // console.table(sortedByDescentingRating);
 
 //42
-// Change code below this line
-const sortByAscendingBalance = users => {
-   
-};
-// Change code above this line
+// // Change code below this line
+// const sortByAscendingBalance = users => [...users].sort((highBalance, lowBalance) => highBalance.balance - lowBalance.balance);
+// // Change code above this line
+// console.table(users);
+// console.table(sortByAscendingBalance(users));
 
+//43
+// // Change code below this line
+// const sortByDescendingFriendCount = users =>
+//   [...users].sort(
+//     (manyFriends, fewFriends) => fewFriends.friends.length - manyFriends.friends.length
+//   );
+// // Change code above this line
+// console.table(users)
+// console.table(sortByDescendingFriendCount(users));
+
+//44
+// Change code below this line
+// const sortByName = users =>
+//   [...users].sort((firstNames, secondNames) => firstNames.name.localeCompare(secondNames.name));
+// // Change code above this line
+// console.table(users);
+// console.table(sortByName(users));
+
+//45
+// const books = [
+//   {
+//     title: 'The Last Kingdom',
+//     author: 'Bernard Cornwell',
+//     rating: 8.38,
+//   },
+//   {
+//     title: 'Beside Still Waters',
+//     author: 'Robert Sheckley',
+//     rating: 8.51,
+//   },
+//   {
+//     title: 'The Dream of a Ridiculous Man',
+//     author: 'Fyodor Dostoevsky',
+//     rating: 7.75,
+//   },
+//   { title: 'Redder Than Blood', author: 'Tanith Lee', rating: 7.94 },
+//   {
+//     title: 'The Dreams in the Witch House',
+//     author: 'Howard Lovecraft',
+//     rating: 8.67,
+//   },
+// ];
+// console.table(books);
+// const MIN_BOOK_RATING = 8;
+// // Change code below this line
+
+// const names = books
+// .filter(book => book.rating > MIN_BOOK_RATING)
+// .map(book => book.author)
+// .sort((firstNames, secondNames) => firstNames.localeCompare(secondNames));
+// console.table(names);
+// console.log(names);
+
+//46
+// // Change code below this line
+// const getNamesSortedByFriendCount = users =>
+//   [...users]
+//   .sort((fewFriends, manyFriends) => fewFriends.friends.length - manyFriends.friends.length)
+//   .map(user => user.name);
+// // Change code above this line
+// console.table(getNamesSortedByFriendCount(users));
+// console.log(getNamesSortedByFriendCount(users));
+
+//47
+// // Change code below this line
+// const getSortedFriends = users =>
+//   users
+//     .flatMap(user => user.friends)
+//     .filter((friend, index, array) => array.indexOf(friend) === index)
+//     .sort((firstNames, secondNames) => firstNames.localeCompare(secondNames));
+// // Change code above this line
+// console.table(getSortedFriends(users));
+// console.log(getSortedFriends(users));
+
+//48
+// Change code below this line
+const getTotalBalanceByGender = (users, gender) => 
+users.filter(user => user.gender === gender)
+.reduce((allBalance, user) => allBalance + user.balance, 0);
+// Change code above this line
+console.table(getTotalBalanceByGender(users, 'female'));
+console.log(getTotalBalanceByGender(users, 'male'));
+///////////////////////////
+// const sortedByAscendingScore = [...students].sort((a, b) => a.score - b.score).map(student => student.name);
 
 //////////////////////// exercise
 // const getTotalFriendCount = users.reduce((allFriends, user) => {
