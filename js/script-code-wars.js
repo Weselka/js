@@ -9,7 +9,7 @@
 //   for (let i = 0; i < numbers.length; i += 1) {
 //     if (
 //       (numbers[i] < number && numbers[i] % 3 === 0) ||
-//       (numbers[i] < number && numbers[i] && numbers[i] % 5 === 0)
+//       (numbers[i] < number && numbers[i] % 5 === 0)
 //     ) {
 //       sum += numbers[i];
 //     }
@@ -26,4 +26,9 @@
 // Наприклад, коли масив передається як [19, 5, 42, 2, 77], вихід має бути 7.
 
 // [10, 343445353, 3453445, 3453545353453]має повернутися 3453455.
-
+function sumTwoSmallestNumbers(numbers) {
+  const twoSmallestNumbers = [...numbers].sort((a, b) => a - b).slice(0, 2);
+    console.log(twoSmallestNumbers);
+    
+}
+console.log(sumTwoSmallestNumbers([19, 5, 42, 2, 77]));
