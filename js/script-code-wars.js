@@ -27,7 +27,8 @@
 
 // [10, 343445353, 3453445, 3453545353453]має повернутися 3453455.
 function sumTwoSmallestNumbers(numbers) {
-  const twoSmallestNumbers = [...numbers].sort((a, b) => a - b).slice(0, 2);
+    const twoSmallestNumbers = [...numbers].sort((a, b) => a - b).slice(0, 2).forEach(number)    
+  
     console.log(twoSmallestNumbers);
     
 }
